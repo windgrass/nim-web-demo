@@ -1,0 +1,19 @@
+.by-main-wrap {
+    width: 800px;
+    height: 500px;
+    position: fixed;
+    top: 5%;
+    left: 20%;
+    background-color: rgba(222, 222, 222, .2);
+}
+
+.by-tablet{
+    width: 300px;
+    height: 300px;
+    /* position: absolute; */
+    /* top: 0; */
+    /* left: 0; */
+    background: url(../images/beyond/beiban_bg.png) no-repeat center;
+    background-size: contain;
+    z-index: 100;
+}
