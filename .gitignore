@@ -3,3 +3,5 @@ webdemo/im/chatroom/node_modules/*
 npm-debug.log
 .vscode
 yarn.*
+/webdemo/im/js/config.js
+/webdemo/im/images/beyond/*

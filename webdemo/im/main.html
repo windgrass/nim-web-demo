@@ -23,7 +23,7 @@
 	<div class="bad-network hide tc radius5px" id="errorNetwork">已与服务器断开，请检查网络连接</div>
 	<div class="wrapper box-sizing">
 		<div class="content">
-			<div class="left-panel radius5px" id="left-panel">
+			<div class="left-panel radius5px hide" id="left-panel">
 				<div class="hide loading" id="loading"></div>
 				<div class="title">
 					<img src="" alt="" width="56" height="56" class="radius-circle avatar" id="userPic" />
@@ -400,10 +400,50 @@
 				<button class="btn btn-ok radius4px chat j-chat">聊天</button>
 			</div>
 		</div>
+
+		<!-- beyond 贝板上课视图 -->
+		<div class="by-main-wrap radius5px">
+			<div class="by-head">
+				<span>法老的密码</span>
+			</div>
+
+
+
+			<!-- 视频 -->
+			<div class="by-video-wrap">
+				<video id="by-vdo" width="100%" height="auto" controls poster="images/beyond/replace_desc.jpg">
+					<source src="video/cn_falao.mp4" type="video/mp4"> 您的浏览器不支持 video 标签
+				</video>
+
+				<div class="by-video-choice">
+					<p>视频播放完成，接下来是再看一遍，还是继续闯关？</p>
+					<div class="by-btn-wrap">
+						<button id="replay-video">再看一遍</button>
+						<button id="start-game">闯关去</button>
+					</div>
+				</div>
+			</div>
+
+
+			<!-- 贝板视图 -->
+			<div class="by-tablet-wrap">
+				<div class="by-tablet">
+					<img src="./images/beyond/falao.png">
+				</div>
+			</div>
+
+			<!-- 底部 -->
+			<div class="by-footer">
+				<span>Copyright &copy; 2015-2018 Beyond Screen Inc. All Rights Reserved. ICP 12017056-3</span>
+			</div>
+		</div>
+
 	</div>
-	<div class="footer tc">
-		<span>&copy;1997 - 2018 网易公司版权所有</span>
-	</div>
+	<!-- <div class="footer tc">
+		<span>&copy;1997 - 2018 贝阳公司版权所有</span>
+	</div> -->
+
+
 
 	<!-- 退出确认框 -->
 	<div class="dialog radius5px hide" id="logoutDialog">
@@ -615,13 +655,6 @@
 	</div>
 	<div id="mask" class="mask hide"></div>
 
-	<!-- beyond 贝板 -->
-	<div class="by-main-wrap">
-		<div class="by-tablet">
-
-		</div>
-	</div>
-
 	<script>
 		// IE 11 polify
 		if (!Object.assign) {
@@ -707,6 +740,7 @@
 	<script src="js/module/dialog_call_method.js"></script>
 	<script src="js/main.js?v=2"></script>
 	<script src="js/beyond/beyond_ui.js"></script>
+	<script src="js/beyond/video_ctl.js"></script>
 	<script src="../3rd/vue.min.js"></script>
 	<script id="whiteboard-template" type="text/x-template">
 		<div v-show="display" class="function-box whiteboard">
