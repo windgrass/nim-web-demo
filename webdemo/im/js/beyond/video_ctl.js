@@ -1,3 +1,4 @@
+"use strict";
 
 var vdo = document.getElementById("by-vdo");
 

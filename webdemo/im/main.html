@@ -16,14 +16,17 @@
 	<link rel="stylesheet" href="css/pure-min.css">
 	<link rel="stylesheet" href="css/whiteboard.css" />
 	<link rel="stylesheet" href="css/beyond.css" />
+	<link rel="stylesheet" href="css/font-awesome.min.css" />
 	<link rel="icon" href="images/icon.ico" type="image/x-icon" />
+
+	<!-- <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> -->
 </head>
 
 <body>
 	<div class="bad-network hide tc radius5px" id="errorNetwork">已与服务器断开，请检查网络连接</div>
 	<div class="wrapper box-sizing">
 		<div class="content">
-			<div class="left-panel radius5px hide" id="left-panel">
+			<div class="left-panel radius5px" id="left-panel">
 				<div class="hide loading" id="loading"></div>
 				<div class="title">
 					<img src="" alt="" width="56" height="56" class="radius-circle avatar" id="userPic" />
@@ -407,8 +410,6 @@
 				<span>法老的密码</span>
 			</div>
 
-
-
 			<!-- 视频 -->
 			<div class="by-video-wrap">
 				<video id="by-vdo" width="100%" height="auto" controls poster="images/beyond/replace_desc.jpg">
@@ -418,18 +419,40 @@
 				<div class="by-video-choice">
 					<p>视频播放完成，接下来是再看一遍，还是继续闯关？</p>
 					<div class="by-btn-wrap">
-						<button id="replay-video">再看一遍</button>
-						<button id="start-game">闯关去</button>
+						<button class="by-btn" id="replay-video">再看一遍</button>
+						<button class="by-btn" id="start-game">闯关去</button>
 					</div>
 				</div>
 			</div>
-
 
 			<!-- 贝板视图 -->
 			<div class="by-tablet-wrap">
 				<div class="by-tablet">
 					<img src="./images/beyond/falao.png">
 				</div>
+
+				<!-- 侧栏 -->
+				<aside class="by-aside">
+					<div>
+						<div class="by-h2">题目说明</div>
+						<p>
+							逻辑思维是一种重要的思维能力，不仅是学好数学必须具备的能力，也是学好其他学科、处理日常生活问题所必需的能力。逻辑思维包，实物棋子操作，随时更换和调整，便于孩子“试误性”的归纳学习。形式丰富多彩，全方面训练孩子的逻辑思维能力，让孩子们在游戏中养成探索归纳、深入思考的学习习惯。
+						</p>
+					</div>
+					
+					<div class="by-course-rate">
+						<div class="by-h2">闯关进度</div>
+						<div class="by-square-box">
+							<i class="fa fa-check-square-o"></i>
+							<i class="fa fa-check-square-o"></i>
+							<i class="fa fa-square-o"></i>
+							<i class="fa fa-square-o"></i>
+						</ul>
+					</div>
+					<div class="by-btn-wrap">
+						<button id="by-call-techer" class="by-btn">求助老师</button>
+					</div>
+				</aside>
 			</div>
 
 			<!-- 底部 -->
