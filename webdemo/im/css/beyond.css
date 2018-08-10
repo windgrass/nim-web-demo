@@ -1,11 +1,45 @@
 /* main */
+
 .wrapper {
     min-height: 920px;
     /* background: url(../images/beyond/opacity_logo.png) no-repeat center; */
     background: none;
 }
 
+.by-ovflhide {
+    overflow: hidden;
+}
+
+.by-blur {
+    filter: blur(3px);
+}
+
+.by-float-l {
+    float: left;
+}
+
+.by-float-r {
+    float: right;
+}
+
+.by-w30 {
+    width: 30%;
+}
+
+.by-w40 {
+    width: 30%;
+}
+
+.by-w70 {
+    width: 70%;
+}
+
+.by-w90 {
+    width: 90%;
+}
+
 /* beyond */
+
 .by-h2 {
     font-size: 1.5em;
     text-align: center;
@@ -14,7 +48,6 @@
 
 .by-main-wrap {
     color: #eee;
-    width: 90%;
     height: 90%;
     /* position: fixed; */
     /* top: 5%; */
@@ -23,7 +56,7 @@
     border: 1px solid #4B8DC1;
 }
 
-.by-head{
+.by-head {
     font-size: 2em;
     text-align: center;
     margin: 10px auto;
@@ -39,10 +72,13 @@
 
 .by-tablet-wrap {
     position: relative;
-
+    overflow: hidden;
+}
+.by-tablet-wrap>div {
+    margin: 5px;
 }
 
-.by-tablet{
+.by-tablet {
     width: 80%;
     min-height: 300px;
     /* position: absolute; */
@@ -52,7 +88,20 @@
     background-size: contain;
     /* z-index: 100; */
 }
+
 .by-tablet img {
+    margin: 2%;
+    width: 96%;
+    border-radius: 9% 22% 9% 9%;
+}
+
+.by-teacher-tablet {
+    min-height: 100px;
+    background: url(../images/beyond/beiban_bg.png) no-repeat center;
+    background-size: contain;
+}
+
+.by-teacher-tablet img {
     margin: 2%;
     width: 96%;
     border-radius: 9% 22% 9% 9%;
@@ -61,33 +110,45 @@
 .by-video-wrap {
     position: relative;
 }
+
 /* .by-video-wrap video {
    margin-left: 10%;
 } */
 
 .by-video-choice {
+    color: #fff;
+    width: 80%;
+    height: 300px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
     text-align: center;
+    margin-left: -40%;
+    background: rgba(33, 33, 33, .8);
 }
+
 .by-video-choice p {
     font-size: 2em;
     margin: 5px auto;
+    line-height: 200px;
 }
 
-.by-btn-wrap{
+.by-btn-wrap {
     margin: 20px auto;
     text-align: center;
 }
-.by-btn{
+
+.by-btn {
     font-size: 1.5em;
     padding: 5px;
     background-color: #288DFA;
     border: 1px solid rgb(58, 150, 150);
     border-radius: 5px;
 }
-.by-btn-wrap button+button{
+
+.by-btn-wrap button+button {
     margin-left: 20px;
 }
-
 
 .by-aside {
     width: 120px;
@@ -95,13 +156,16 @@
     right: 2%;
     top: 5%;
 }
+
 .by-aside p {
     font-size: 1.2em;
 }
+
 .by-square-box {
     font-size: 2em;
     text-align: center;
 }
-.by-square-box li+li{
+
+.by-square-box li+li {
     margin-left: 20px;
 }

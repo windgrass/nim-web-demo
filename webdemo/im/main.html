@@ -24,9 +24,9 @@
 
 <body>
 	<div class="bad-network hide tc radius5px" id="errorNetwork">已与服务器断开，请检查网络连接</div>
-	<div class="wrapper box-sizing">
+	<div class="wrapper box-sizing by-ovflhide">
 		<div class="content">
-			<div class="left-panel radius5px" id="left-panel">
+			<div class="left-panel radius5px hide" id="left-panel">
 				<div class="hide loading" id="loading"></div>
 				<div class="title">
 					<img src="" alt="" width="56" height="56" class="radius-circle avatar" id="userPic" />
@@ -405,18 +405,18 @@
 		</div>
 
 		<!-- beyond 贝板上课视图 -->
-		<div class="by-main-wrap radius5px">
+<div id="main-wrap" class="by-main-wrap by-w90 by-float-r radius5px">
 			<div class="by-head">
 				<span>法老的密码</span>
 			</div>
 
 			<!-- 视频 -->
-			<div class="by-video-wrap">
+			<div id="vdo-wrap" class="by-video-wrap hide">
 				<video id="by-vdo" width="100%" height="auto" controls poster="images/beyond/replace_desc.jpg">
 					<source src="video/cn_falao.mp4" type="video/mp4"> 您的浏览器不支持 video 标签
 				</video>
 
-				<div class="by-video-choice">
+				<div class="by-video-choice hide">
 					<p>视频播放完成，接下来是再看一遍，还是继续闯关？</p>
 					<div class="by-btn-wrap">
 						<button class="by-btn" id="replay-video">再看一遍</button>
@@ -425,8 +425,8 @@
 				</div>
 			</div>
 
-			<!-- 贝板视图 -->
-			<div class="by-tablet-wrap">
+			<!-- 学生 贝板视图 -->
+			<div id="tablet-wrap" class="by-tablet-wrap hide">
 				<div class="by-tablet">
 					<img src="./images/beyond/falao.png">
 				</div>
@@ -439,7 +439,7 @@
 							逻辑思维是一种重要的思维能力，不仅是学好数学必须具备的能力，也是学好其他学科、处理日常生活问题所必需的能力。逻辑思维包，实物棋子操作，随时更换和调整，便于孩子“试误性”的归纳学习。形式丰富多彩，全方面训练孩子的逻辑思维能力，让孩子们在游戏中养成探索归纳、深入思考的学习习惯。
 						</p>
 					</div>
-					
+
 					<div class="by-course-rate">
 						<div class="by-h2">闯关进度</div>
 						<div class="by-square-box">
@@ -447,12 +447,80 @@
 							<i class="fa fa-check-square-o"></i>
 							<i class="fa fa-square-o"></i>
 							<i class="fa fa-square-o"></i>
-						</ul>
+						</div>
 					</div>
 					<div class="by-btn-wrap">
 						<button id="by-call-techer" class="by-btn">求助老师</button>
 					</div>
+					<div class="by-btn-wrap">
+						<button id="by-show-vdo" class="by-btn">看教程</button>
+					</div>
+
 				</aside>
+			</div>
+
+			<!-- 老师 贝板视图 -->
+			<div id="tablet-wrap" class="by-tablet-wrap by-float-r">
+				<div class="by-float-l by-w40">
+					<div class="by-h2">张三</div>
+					<div class="by-teacher-tablet">
+						<img src="./images/beyond/falao.png">
+					</div>
+					<p>
+						<span class="by-float-l">状态：在线</span>
+						<span class="by-float-r">序列号：00020111234567890</span>
+					</p>
+					<p>
+						<span class="by-float-l">游戏：法老密码</span>
+						<span class="by-float-r">进度：第三关</span>
+					</p>
+				</div>
+
+				<div class="by-float-l by-w40">
+					<div class="by-h2">李四</div>
+					<div class="by-teacher-tablet">
+						<img src="./images/beyond/falao.png">
+					</div>
+					<p>
+						<span class="by-float-l">状态：在线</span>
+						<span class="by-float-r">序列号：00020111234567890</span>
+					</p>
+					<p>
+						<span class="by-float-l">游戏：法老密码</span>
+						<span class="by-float-r">进度：第四关</span>
+					</p>
+				</div>
+
+				<div class="by-float-l by-w40">
+					<div class="by-h2 ">王五</div>
+					<div class="by-teacher-tablet">
+						<img src="./images/beyond/falao.png">
+					</div>
+					<p>
+						<span class="by-float-l">状态：在线</span>
+						<span class="by-float-r">序列号：00020111234567890</span>
+					</p>
+					<p>
+						<span class="by-float-l">游戏：法老密码</span>
+						<span class="by-float-r">进度：第五关</span>
+					</p>
+				</div>
+
+				<div class="by-float-l by-w40">
+					<div class="by-h2 by-w30">王五</div>
+					<div class="by-teacher-tablet">
+						<img src="./images/beyond/falao.png">
+					</div>
+					<p>
+						<span class="by-float-l">状态：在线</span>
+						<span class="by-float-r">序列号：00020111234567890</span>
+					</p>
+					<p>
+						<span class="by-float-l">游戏：法老密码</span>
+						<span class="by-float-r">进度：第二关</span>
+					</p>
+				</div>
+
 			</div>
 
 			<!-- 底部 -->

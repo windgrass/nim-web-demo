@@ -133,6 +133,10 @@ var Login = {
       dataType: "JSON",
     }).then((res) => {
       console.log('res', res)
+      if (res.code === -1) {
+        alert("用户名或密码错误，请重试");
+        return;
+      }
       window.setCookie('uid', res.data.neteaseAccid);
       //括号里的内容换成后端程序员哥哥给你返回的id和token
       window.setCookie('sdktoken', res.data.neteaseToken);

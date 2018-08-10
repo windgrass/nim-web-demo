@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8eeed8cc-fabe-4332-9a66-1a18ede9d4f1" name="Default Changelist" comment="" />
+    <list default="true" id="8eeed8cc-fabe-4332-9a66-1a18ede9d4f1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webdemo/im/css/beyond.css" beforeDir="false" afterPath="$PROJECT_DIR$/webdemo/im/css/beyond.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webdemo/im/js/beyond/video_ctl.js" beforeDir="false" afterPath="$PROJECT_DIR$/webdemo/im/js/beyond/video_ctl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webdemo/im/js/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/webdemo/im/js/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webdemo/im/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/webdemo/im/main.html" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,12 +37,12 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="netcall.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webdemo/im/js/module/netcall.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="11" column="40" lean-forward="true" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
+            <state relative-caret-position="102">
+              <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -43,11 +50,38 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file leaf-file-name="NIM_Web_Chatroom_v5.4.0.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webdemo/3rd/NIM_Web_Chatroom_v5.4.0.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="223">
-              <caret line="660" column="312" selection-start-line="660" selection-start-column="312" selection-end-line="660" selection-end-column="312" />
+            <state relative-caret-position="1022">
+              <caret line="676" column="27" selection-start-line="676" selection-start-column="27" selection-end-line="676" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webdemo/im/main.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="489">
+              <caret line="396" column="18" lean-forward="true" selection-start-line="396" selection-start-column="18" selection-end-line="396" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="uiKit.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webdemo/im/js/widget/uiKit.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret line="147" lean-forward="true" selection-start-line="147" selection-end-line="147" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="beyond_ui.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/webdemo/im/js/beyond/beyond_ui.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="27" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -59,6 +93,9 @@
       <find>非法操作或没有权限</find>
       <find>403</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -91,55 +128,60 @@
     <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="NIM_Web_Demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NIM_Web_Demo" type="462c0819:PsiDirectoryNode" />
+              <item name="NIM_Web_Demo_dev" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NIM_Web_Demo_dev" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
-              <item name="NIM_Web_Demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NIM_Web_Demo" type="462c0819:PsiDirectoryNode" />
-              <item name="webdemo" type="462c0819:PsiDirectoryNode" />
+              <item name="NIM_Web_Demo_dev" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NIM_Web_Demo_dev" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="webdemo" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
-              <item name="NIM_Web_Demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NIM_Web_Demo" type="462c0819:PsiDirectoryNode" />
-              <item name="webdemo" type="462c0819:PsiDirectoryNode" />
-              <item name="3rd" type="462c0819:PsiDirectoryNode" />
+              <item name="NIM_Web_Demo_dev" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NIM_Web_Demo_dev" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="webdemo" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="im" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
-              <item name="NIM_Web_Demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NIM_Web_Demo" type="462c0819:PsiDirectoryNode" />
-              <item name="webdemo" type="462c0819:PsiDirectoryNode" />
-              <item name="im" type="462c0819:PsiDirectoryNode" />
+              <item name="NIM_Web_Demo_dev" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NIM_Web_Demo_dev" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="webdemo" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="im" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
-              <item name="NIM_Web_Demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NIM_Web_Demo" type="462c0819:PsiDirectoryNode" />
-              <item name="webdemo" type="462c0819:PsiDirectoryNode" />
-              <item name="im" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="NIM_Web_Demo_dev" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NIM_Web_Demo_dev" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="webdemo" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="im" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="beyond" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
-              <item name="NIM_Web_Demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NIM_Web_Demo" type="462c0819:PsiDirectoryNode" />
-              <item name="webdemo" type="462c0819:PsiDirectoryNode" />
-              <item name="im" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="module" type="462c0819:PsiDirectoryNode" />
+              <item name="NIM_Web_Demo_dev" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NIM_Web_Demo_dev" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="webdemo" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="im" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="widget" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -172,36 +214,38 @@
       <option name="presentableId" value="Default" />
       <updated>1533266411273</updated>
       <workItem from="1533266412715" duration="809000" />
+      <workItem from="1533869168428" duration="2518000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="809000" />
+    <option name="totallyTimeSpent" value="3327000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="npm" side_tool="true" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info id="npm" order="4" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25239617" />
+      <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Gulp" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -213,7 +257,7 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/webdemo/im/js/module/netcall.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
+        <state relative-caret-position="187">
           <caret line="11" column="40" lean-forward="true" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
@@ -223,8 +267,46 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/webdemo/3rd/NIM_Web_Chatroom_v5.4.0.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
+        <state relative-caret-position="11271">
           <caret line="660" column="312" selection-start-line="660" selection-start-column="312" selection-end-line="660" selection-end-column="312" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webdemo/im/js/module/netcall.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webdemo/3rd/NIM_Web_Chatroom_v5.4.0.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1022">
+          <caret line="676" column="27" selection-start-line="676" selection-start-column="27" selection-end-line="676" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webdemo/im/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="489">
+          <caret line="396" column="18" lean-forward="true" selection-start-line="396" selection-start-column="18" selection-end-line="396" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webdemo/im/js/widget/uiKit.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="147" lean-forward="true" selection-start-line="147" selection-end-line="147" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webdemo/im/js/beyond/beyond_ui.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="27" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="27" />
         </state>
       </provider>
     </entry>
