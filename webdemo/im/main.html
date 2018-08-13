@@ -26,7 +26,7 @@
 	<div class="bad-network hide tc radius5px" id="errorNetwork">已与服务器断开，请检查网络连接</div>
 	<div class="wrapper box-sizing by-ovflhide">
 		<div class="content">
-			<div class="left-panel radius5px hide" id="left-panel">
+			<div class="left-panel radius5px " id="left-panel">
 				<div class="hide loading" id="loading"></div>
 				<div class="title">
 					<img src="" alt="" width="56" height="56" class="radius-circle avatar" id="userPic" />
@@ -143,7 +143,7 @@
 			<div class="chatVernier" id="chatVernier">
 				<span class="radius-circle hide"></span>
 			</div>
-			<div class="right-panel hide radius5px" id="rightPanel">
+			<div class="right-panel radius5px hide by-stu-panel" id="rightPanel">
 				<!-- 聊天面板 -->
 				<div class="chat-box show-netcall-box" id="chatBox">
 					<div class="title" id="chatTitle">
@@ -405,9 +405,9 @@
 		</div>
 
 		<!-- beyond 贝板上课视图 -->
-<div id="main-wrap" class="by-main-wrap by-w90 by-float-r radius5px">
+		<div id="main-wrap" class="by-main-wrap by-w90 by-float-r radius5px">
 			<div class="by-head">
-				<span>法老的密码</span>
+<span>✈️法老的密码✈️</span>
 			</div>
 
 			<!-- 视频 -->
@@ -425,8 +425,8 @@
 				</div>
 			</div>
 
-			<!-- 学生 贝板视图 -->
-			<div id="tablet-wrap" class="by-tablet-wrap hide">
+			<!-- 学生 开始闯关 -->
+			<div id="tablet-wrap" class="by-tablet-wrap ">
 				<div class="by-tablet">
 					<img src="./images/beyond/falao.png">
 				</div>
@@ -450,7 +450,8 @@
 						</div>
 					</div>
 					<div class="by-btn-wrap">
-						<button id="by-call-techer" class="by-btn">求助老师</button>
+						<button id="callTecher" class="by-btn">求助老师</button>
+						<a id="callTeacher-a" href="#rightPanel" class="hide"></a>
 					</div>
 					<div class="by-btn-wrap">
 						<button id="by-show-vdo" class="by-btn">看教程</button>
@@ -460,7 +461,7 @@
 			</div>
 
 			<!-- 老师 贝板视图 -->
-			<div id="tablet-wrap" class="by-tablet-wrap by-float-r">
+			<div id="techTabletWrap" class="by-tablet-wrap by-float-r hide">
 				<div class="by-float-l by-w40">
 					<div class="by-h2">张三</div>
 					<div class="by-teacher-tablet">

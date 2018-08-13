@@ -18,6 +18,7 @@ var btnStartGame = document.getElementById("start-game");
 var videoWrap = document.getElementById("vdo-wrap");
 var tabletWrap = document.getElementById("tablet-wrap");
 var showVdo = document.getElementById("by-show-vdo");
+var callTech = document.getElementById("callTecher");
 
 // 再看一遍 按钮事件
 btnReplayVideo.addEventListener("click", function (e) {
@@ -40,5 +41,18 @@ showVdo.addEventListener("click", function () {
     vdoChoice[0].classList.add("hide");
     videoWrap.classList.remove("hide");
     vdo.classList.remove("by-blur");
+});
+
+callTech.addEventListener("click", function () {
+    console.log("%c 呼叫老师", "color:green; font-size: 20px;");
+
+    if ('undefined' === $("[data-account='2']")[0]) {
+        alert("获取老师信息失败，在自动重试......");
+        $("[data-type='friends']").click();
+    } else {
+        $("[data-account='2']").click();
+        $("#rightPanel").removeClass("hide");
+        $("#rightPanel").css({'right':'10px'});
+    }
 });
 

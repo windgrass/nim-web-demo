@@ -38,13 +38,12 @@
     width: 90%;
 }
 
-/* beyond */
-
 .by-h2 {
     font-size: 1.5em;
     text-align: center;
     margin: 20px auto 10px;
 }
+
 
 .by-main-wrap {
     color: #eee;
@@ -89,22 +88,18 @@
     /* z-index: 100; */
 }
 
-.by-tablet img {
-    margin: 2%;
-    width: 96%;
-    border-radius: 9% 22% 9% 9%;
-}
-
 .by-teacher-tablet {
     min-height: 100px;
     background: url(../images/beyond/beiban_bg.png) no-repeat center;
     background-size: contain;
 }
 
-.by-teacher-tablet img {
+.by-teacher-tablet img,
+.by-tablet img {
     margin: 2%;
     width: 96%;
-    border-radius: 9% 22% 9% 9%;
+    border-radius: 9% 16% 9% 9%;
+    clip-path: polygon(0 0, 87% 0, 100% 13%, 100% 100%, 0 100%);
 }
 
 .by-video-wrap {
@@ -168,4 +163,14 @@
 
 .by-square-box li+li {
     margin-left: 20px;
+}
+
+/* 学生聊天面板 */
+.by-stu-panel {
+    width: 630px;
+    height: 620px;
+    position: absolute;
+    right: -631px;
+    margin: 0;
+    transition: right .8s cubic-bezier(.56, 1.24, .78, 1.11)
 }
