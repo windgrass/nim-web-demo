@@ -45,14 +45,15 @@ showVdo.addEventListener("click", function () {
 
 callTech.addEventListener("click", function () {
     console.log("%c 呼叫老师", "color:green; font-size: 20px;");
-
-    if ('undefined' === $("[data-account='2']")[0]) {
+    var curAccount = document.querySelector("[data-account = '2']");
+    
+    /* if ('undefined' === $("[data-account='2']")[0]) {
         alert("获取老师信息失败，在自动重试......");
         $("[data-type='friends']").click();
     } else {
         $("[data-account='2']").click();
         $("#rightPanel").removeClass("hide");
         $("#rightPanel").css({'right':'10px'});
-    }
+    } */
 });
 
