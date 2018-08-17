@@ -43,10 +43,22 @@ showVdo.addEventListener("click", function () {
     vdo.classList.remove("by-blur");
 });
 
+// 求助老师 按钮事件
 callTech.addEventListener("click", function () {
-    console.log("%c 呼叫老师", "color:green; font-size: 20px;");
-    var curAccount = document.querySelector("[data-account = '2']");
-    
+        console.log("%c 呼叫老师", "color:green; font-size: 20px;");
+        var curAccount = document.querySelector("[data-account = '2']");
+        if (null === curAccount) {
+            alert("获取老师信息失败, 正在重试");
+            autoClickFriends();
+        } else {
+            /* var e = document.createEvent("MouseEvents");
+            e.initEvent("click", true, true);
+            curAccount.dispatchEvent(e); */
+            $("#rightPanel").css({
+                'right': '10px'
+            });
+        }
+    }
     /* if ('undefined' === $("[data-account='2']")[0]) {
         alert("获取老师信息失败，在自动重试......");
         $("[data-type='friends']").click();
@@ -55,5 +67,9 @@ callTech.addEventListener("click", function () {
         $("#rightPanel").removeClass("hide");
         $("#rightPanel").css({'right':'10px'});
     } */
-});
+);
 
+var closeRpanel = document.getElementById("closeRPanel");
+closeRpanel.addEventListener("click", function(){
+    $("#rightPanel").css({"right":"-631px"});
+});

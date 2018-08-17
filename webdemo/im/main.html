@@ -26,7 +26,7 @@
 	<div class="bad-network hide tc radius5px" id="errorNetwork">已与服务器断开，请检查网络连接</div>
 	<div class="wrapper box-sizing by-ovflhide">
 		<div class="content">
-			<div class="left-panel radius5px " id="left-panel">
+			<div class="left-panel radius5px hide" id="left-panel">
 				<div class="hide loading" id="loading"></div>
 				<div class="title">
 					<img src="" alt="" width="56" height="56" class="radius-circle avatar" id="userPic" />
@@ -149,13 +149,16 @@
 					<div class="title" id="chatTitle">
 						<img src="" width="56" height="56" class="radius-circle img" id="headImg" />
 						<span id="nickName"></span>
-						<div class="cloudMsg tc radius4px" data-record-id="" id="cloudMsg">
+						<div class="hide cloudMsg tc radius4px" data-record-id="" id="cloudMsg">
 							<i class="icon icon-team-info"></i>
 							<p>云记录</p>
 						</div>
 						<div class="team-info hide tc radius4px" data-team-id="" id="teamInfo">
 							<i class="icon icon-team-info"></i>
 							<p>资料</p>
+						</div>
+						<div class="close-panel tc radius4px" data-team-id="" id="closeRPanel">
+							<i class="icon icon-close"></i>
 						</div>
 					</div>
 					<div class="netcall-box" id="netcallBox">
@@ -240,8 +243,8 @@
 							<div class="op">
 								<button class="hangupButton netcall-button red">挂断</button>
 							</div>
-
 						</div>
+
 						<!-- 多人音视频互动界面 -->
 						<div class="netcall-meeting-box hide" id="netcallMeetingBox"></div>
 						<!-- 被叫界面 -->
@@ -407,65 +410,130 @@
 		<!-- beyond 贝板上课视图 -->
 		<div id="main-wrap" class="by-main-wrap by-w90 by-float-r radius5px">
 			<div class="by-head">
-<span>✈️法老的密码✈️</span>
+				<span>✈️法老的密码✈️</span>
 			</div>
 
-			<!-- 视频 -->
-			<div id="vdo-wrap" class="by-video-wrap hide">
-				<video id="by-vdo" width="100%" height="auto" controls poster="images/beyond/replace_desc.jpg">
-					<source src="video/cn_falao.mp4" type="video/mp4"> 您的浏览器不支持 video 标签
-				</video>
+			<div id="stuWrap">
+				<!-- 视频 -->
+				<div id="vdo-wrap" class="by-video-wrap hide">
+					<video id="by-vdo" width="100%" height="auto" controls poster="images/beyond/replace_desc.jpg">
+						<source src="video/cn_falao.mp4" type="video/mp4"> 您的浏览器不支持 video 标签
+					</video>
 
-				<div class="by-video-choice hide">
-					<p>视频播放完成，接下来是再看一遍，还是继续闯关？</p>
-					<div class="by-btn-wrap">
-						<button class="by-btn" id="replay-video">再看一遍</button>
-						<button class="by-btn" id="start-game">闯关去</button>
-					</div>
-				</div>
-			</div>
-
-			<!-- 学生 开始闯关 -->
-			<div id="tablet-wrap" class="by-tablet-wrap ">
-				<div class="by-tablet">
-					<img src="./images/beyond/falao.png">
-				</div>
-
-				<!-- 侧栏 -->
-				<aside class="by-aside">
-					<div>
-						<div class="by-h2">题目说明</div>
-						<p>
-							逻辑思维是一种重要的思维能力，不仅是学好数学必须具备的能力，也是学好其他学科、处理日常生活问题所必需的能力。逻辑思维包，实物棋子操作，随时更换和调整，便于孩子“试误性”的归纳学习。形式丰富多彩，全方面训练孩子的逻辑思维能力，让孩子们在游戏中养成探索归纳、深入思考的学习习惯。
-						</p>
-					</div>
-
-					<div class="by-course-rate">
-						<div class="by-h2">闯关进度</div>
-						<div class="by-square-box">
-							<i class="fa fa-check-square-o"></i>
-							<i class="fa fa-check-square-o"></i>
-							<i class="fa fa-square-o"></i>
-							<i class="fa fa-square-o"></i>
+					<div class="by-video-choice hide">
+						<p>视频播放完成，接下来是再看一遍，还是继续闯关？</p>
+						<div class="by-btn-wrap">
+							<button class="by-btn" id="replay-video">再看一遍</button>
+							<button class="by-btn" id="start-game">闯关去</button>
 						</div>
 					</div>
-					<div class="by-btn-wrap">
-						<button id="callTecher" class="by-btn">求助老师</button>
-						<a id="callTeacher-a" href="#rightPanel" class="hide"></a>
-					</div>
-					<div class="by-btn-wrap">
-						<button id="by-show-vdo" class="by-btn">看教程</button>
+				</div>
+
+				<!-- 学生 开始闯关 -->
+				<div id="tablet-wrap" class="by-tablet-wrap hide">
+					<div class="by-tablet">
+						<img class="by-bgmap" src="./images/beyond/falao.png">
+
+						<div class="by-basemap by-flex">
+							<img class="by-map-item map-item-1" src="./images/beyond/falao/jiachong.png" alt="">
+							<img class="by-map-item map-item-1" src="./images/beyond/falao/jiachong.png" alt="">
+							<img class="by-map-item map-item-1" src="./images/beyond/falao/jiachong.png" alt="">
+							<img class="by-map-item map-item-1" src="./images/beyond/falao/jiachong.png" alt="">
+							<img class="by-map-item map-item-1" src="./images/beyond/falao/jiachong.png" alt="">
+							<img class="by-map-item map-item-1" src="./images/beyond/falao/jiachong.png" alt="">
+							<img class="by-map-item map-item-1" src="./images/beyond/falao/jiachong.png" alt="">
+							<img class="by-map-item map-item-1" src="./images/beyond/falao/jiachong.png" alt="">
+							<img class="by-map-item map-item-1" src="./images/beyond/falao/jiachong.png" alt="">
+							<img class="by-map-item map-item-1" src="./images/beyond/falao/jiachong.png" alt="">
+							<img class="by-map-item map-item-1" src="./images/beyond/falao/jiachong.png" alt="">
+							<img class="by-map-item map-item-1" src="./images/beyond/falao/jiachong.png" alt="">
+							<img class="by-map-item map-item-1" src="./images/beyond/falao/jiachong.png" alt="">
+							<img class="by-map-item map-item-1" src="./images/beyond/falao/jiachong.png" alt="">
+							<img class="by-map-item map-item-1" src="./images/beyond/falao/jiachong.png" alt="">
+							<img class="by-map-item map-item-1" src="./images/beyond/falao/jiachong.png" alt="">
+							<!-- <div class="by-flex">
+								<img class="by-map-item map-item-1" src="./images/beyond/falao/jiachong.png" alt="">
+								<img class="by-map-item map-item-1" src="./images/beyond/falao/jiachong.png" alt="">
+								<img class="by-map-item map-item-1" src="./images/beyond/falao/jiachong.png" alt="">
+								<img class="by-map-item map-item-1" src="./images/beyond/falao/jiachong.png" alt="">
+							</div>
+							<div class="by-flex">
+								<img class="by-map-item map-item-1" src="./images/beyond/falao/jiachong.png" alt="">
+								<img class="by-map-item map-item-1" src="./images/beyond/falao/jiachong.png" alt="">
+								<img class="by-map-item map-item-1" src="./images/beyond/falao/jiachong.png" alt="">
+								<img class="by-map-item map-item-1" src="./images/beyond/falao/jiachong.png" alt="">
+							</div>
+							<div class="by-flex">
+								<img class="by-map-item map-item-1" src="./images/beyond/falao/jiachong.png" alt="">
+								<img class="by-map-item map-item-1" src="./images/beyond/falao/jiachong.png" alt="">
+								<img class="by-map-item map-item-1" src="./images/beyond/falao/jiachong.png" alt="">
+								<img class="by-map-item map-item-1" src="./images/beyond/falao/jiachong.png" alt="">
+							</div>
+							<div class="by-flex">
+								<img class="by-map-item map-item-1" src="./images/beyond/falao/jiachong.png" alt="">
+								<img class="by-map-item map-item-1" src="./images/beyond/falao/jiachong.png" alt="">
+								<img class="by-map-item map-item-1" src="./images/beyond/falao/jiachong.png" alt="">
+								<img class="by-map-item map-item-1" src="./images/beyond/falao/jiachong.png" alt="">
+							</div> -->
+						</div>
+
+						<!-- <img src="./images/beyond/falao.png"> -->
 					</div>
 
-				</aside>
+					<!-- 侧栏 -->
+					<aside class="by-aside">
+						<div>
+							<div class="by-h2">题目说明</div>
+							<p>
+								逻辑思维是一种重要的思维能力，不仅是学好数学必须具备的能力，也是学好其他学科、处理日常生活问题所必需的能力。逻辑思维包，实物棋子操作，随时更换和调整，便于孩子“试误性”的归纳学习。形式丰富多彩，全方面训练孩子的逻辑思维能力，让孩子们在游戏中养成探索归纳、深入思考的学习习惯。
+							</p>
+						</div>
+
+						<div class="by-course-rate">
+							<div class="by-h2">闯关进度</div>
+							<div class="by-square-box">
+								<i class="fa fa-check-square-o"></i>
+								<i class="fa fa-check-square-o"></i>
+								<i class="fa fa-square-o"></i>
+								<i class="fa fa-square-o"></i>
+							</div>
+						</div>
+						<div class="by-btn-wrap">
+							<button id="callTecher" class="by-btn">求助老师</button>
+							<a id="callTeacher-a" href="#rightPanel" class="hide"></a>
+						</div>
+						<div class="by-btn-wrap">
+							<button id="by-show-vdo" class="by-btn">看教程</button>
+						</div>
+
+					</aside>
+				</div>
 			</div>
 
 			<!-- 老师 贝板视图 -->
-			<div id="techTabletWrap" class="by-tablet-wrap by-float-r hide">
+			<div id="techTabletWrap" class="by-techtablet-wrap by-float-r hide">
 				<div class="by-float-l by-w40">
 					<div class="by-h2">张三</div>
 					<div class="by-teacher-tablet">
-						<img src="./images/beyond/falao.png">
+						<img class="by-bgmap" src="./images/beyond/falao.png">
+						<div class="by-basemap by-flex">
+							<img class="by-map-item map-item-1" src="./images/beyond/falao/jiachong.png" alt="">
+							<img class="by-map-item map-item-1 by-opacity" src="./images/beyond/falao/jiachong.png" alt="">
+							<img class="by-map-item map-item-1" src="./images/beyond/falao/jiachong.png" alt="">
+							<img class="by-map-item map-item-1" src="./images/beyond/falao/jiachong.png" alt="">
+							<img class="by-map-item map-item-1" src="./images/beyond/falao/jiachong.png" alt="">
+							<img class="by-map-item map-item-1" src="./images/beyond/falao/jiachong.png" alt="">
+							<img class="by-map-item map-item-1" src="./images/beyond/falao/jiachong.png" alt="">
+							<img class="by-map-item map-item-1 by-opacity" src="./images/beyond/falao/jiachong.png" alt="">
+							<img class="by-map-item map-item-1" src="./images/beyond/falao/jiachong.png" alt="">
+							<img class="by-map-item map-item-1" src="./images/beyond/falao/jiachong.png" alt="">
+							<img class="by-map-item map-item-1" src="./images/beyond/falao/jiachong.png" alt="">
+							<img class="by-map-item map-item-1 by-opacity" src="./images/beyond/falao/jiachong.png" alt="">
+							<img class="by-map-item map-item-1" src="./images/beyond/falao/jiachong.png" alt="">
+							<img class="by-map-item map-item-1" src="./images/beyond/falao/jiachong.png" alt="">
+							<img class="by-map-item map-item-1" src="./images/beyond/falao/jiachong.png" alt="">
+							<img class="by-map-item map-item-1" src="./images/beyond/falao/jiachong.png" alt="">
+						</div>
 					</div>
 					<p>
 						<span class="by-float-l">状态：在线</span>
@@ -480,7 +548,7 @@
 				<div class="by-float-l by-w40">
 					<div class="by-h2">李四</div>
 					<div class="by-teacher-tablet">
-						<img src="./images/beyond/falao.png">
+						<img class="by-bgmap" src="./images/beyond/falao.png">
 					</div>
 					<p>
 						<span class="by-float-l">状态：在线</span>
@@ -495,7 +563,7 @@
 				<div class="by-float-l by-w40">
 					<div class="by-h2 ">王五</div>
 					<div class="by-teacher-tablet">
-						<img src="./images/beyond/falao.png">
+						<img class="by-bgmap" src="./images/beyond/falao.png">
 					</div>
 					<p>
 						<span class="by-float-l">状态：在线</span>
@@ -510,7 +578,7 @@
 				<div class="by-float-l by-w40">
 					<div class="by-h2 by-w30">王五</div>
 					<div class="by-teacher-tablet">
-						<img src="./images/beyond/falao.png">
+						<img class="by-bgmap" src="./images/beyond/falao.png">
 					</div>
 					<p>
 						<span class="by-float-l">状态：在线</span>

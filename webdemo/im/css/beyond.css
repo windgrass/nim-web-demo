@@ -10,8 +10,17 @@
     overflow: hidden;
 }
 
+.by-flex {
+    display: flex;
+    overflow: hidden;
+}
+
 .by-blur {
     filter: blur(3px);
+}
+
+.by-opacity {
+    opacity: 0;
 }
 
 .by-float-l {
@@ -27,7 +36,7 @@
 }
 
 .by-w40 {
-    width: 30%;
+    width: 40%;
 }
 
 .by-w70 {
@@ -43,7 +52,6 @@
     text-align: center;
     margin: 20px auto 10px;
 }
-
 
 .by-main-wrap {
     color: #eee;
@@ -73,6 +81,17 @@
     position: relative;
     overflow: hidden;
 }
+
+.by-techtablet-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.by-techtablet-wrap >div {
+    margin-left: 6.666%;
+    margin-bottom: 2%;
+}
+
 .by-tablet-wrap>div {
     margin: 5px;
 }
@@ -89,17 +108,55 @@
 }
 
 .by-teacher-tablet {
+    position: relative;
     min-height: 100px;
     background: url(../images/beyond/beiban_bg.png) no-repeat center;
     background-size: contain;
+    background-position: 0 -1%;
 }
 
-.by-teacher-tablet img,
-.by-tablet img {
+.by-teacher-tablet .by-bgmap,
+.by-tablet .by-bgmap {
     margin: 2%;
     width: 96%;
     border-radius: 9% 16% 9% 9%;
     clip-path: polygon(0 0, 87% 0, 100% 13%, 100% 100%, 0 100%);
+}
+
+.by-tablet .by-basemap {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 335px;
+    height: 335px;
+    position: absolute;
+    top: 197px;
+    left: 199px;
+    /* margin: 2%; */
+    /* border-radius: 9% 16% 9% 9%; */
+    /* clip-path: polygon(0 0, 87% 0, 100% 13%, 100% 100%, 0 100%); */
+    /* background: url(../images/beyond/falao.png) no-repeat center; */
+    /* background-size: contain; */
+}
+
+.by-teacher-tablet .by-basemap {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 46.4%;
+    height: 45%;
+    position: absolute;
+    top: 27%;
+    left: 27%;
+}
+
+.by-teacher-tablet .by-basemap>img {
+    height: 21%;
+}
+
+.by-basemap .by-map-item {
+    flex-basis: 20%;
+    /* padding: 5px; */
+    border-radius: 5px;
+    margin: 2px;
 }
 
 .by-video-wrap {
@@ -166,10 +223,12 @@
 }
 
 /* 学生聊天面板 */
+
 .by-stu-panel {
     width: 630px;
     height: 620px;
     position: absolute;
+    z-index: 999;
     right: -631px;
     margin: 0;
     transition: right .8s cubic-bezier(.56, 1.24, .78, 1.11)

@@ -19,16 +19,17 @@ $(document).ready(function () {
         $("#vdo-wrap").addClass("hide");
         $("#main-wrap").removeClass("by-w90");
         $("#main-wrap").addClass("by-w70");
-        $("techTabletWrap").removeClass("hide");    
+        $("#techTabletWrap").removeClass("hide");
+        $("#stuWrap").addClass("hide");
     } else {
         /* $("#rightPanel").css({
             width: "710px",
             margin:"auto"
         }); */
         $("#vdo-wrap").removeClass("hide");
+        autoClickFriends(); // 学生 自动检测老师li是否加载, 已加载触发点击事件
     }
-
-    autoClickFriends();//自动检测老师li是否加载, 已加载触发点击事件
+    
 });
 
 // 检测是否加载了好友列表, 已加载点击
@@ -50,7 +51,7 @@ function autoClickTecher()
         console.log("techer auto click");
         $("[data-account='2']").click();
     }else{
-        setTimeout("autoClickFriends()", 1000);
+        setTimeout("autoClickFriends()", 1000);//点击 friends 刷新好友列表
         console.log("check techer");
     }
 }
