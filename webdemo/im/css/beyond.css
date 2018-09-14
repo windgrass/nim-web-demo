@@ -1,0 +1,390 @@
+/* main */
+.chatVernier {
+    display: none;
+}
+
+.wrapper {
+    min-height: 920px;
+    /* background: url(../images/beyond/opacity_logo.png) no-repeat center; */
+    background: none;
+}
+
+.by-ovflhide {
+    overflow: hidden;
+}
+
+.by-flex {
+    display: flex;
+    overflow: hidden;
+}
+
+.by-blur {
+    filter: blur(3px);
+}
+
+.by-opacity {
+    opacity: 0;
+}
+
+.by-float-l {
+    float: left;
+}
+
+.by-float-r {
+    float: right;
+}
+
+.by-w30 {
+    width: 30%;
+}
+
+.by-w40 {
+    width: 40%;
+}
+
+.by-w70 {
+    width: 70%;
+}
+
+.by-w90 {
+    width: 90%;
+}
+
+.by-mg2 {
+    margin: 2px;
+}
+
+.by-h2 {
+    font-size: 1.5em;
+    text-align: center;
+    margin: 20px auto 10px;
+}
+
+.by-h3 {
+    font-size: 1.3em;
+    text-align: center;
+    margin: 20px auto 10px;
+}
+
+.by-main-wrap {
+    color: #eee;
+    height: 90%;
+    /* position: fixed; */
+    /* top: 5%; */
+    /* left: 5%; */
+    background-color: rgba(222, 222, 222, .2);
+    border: 1px solid #4B8DC1;
+}
+
+.by-head {
+    font-size: 2em;
+    text-align: center;
+    margin: 10px auto;
+}
+
+.by-footer {
+    position: absolute;
+    text-align: center;
+    bottom: 1%;
+    left: 50%;
+    margin-left: -25%;
+}
+
+.by-tablet-wrap {
+    position: relative;
+    overflow: hidden;
+}
+.by-tablet-wrap .by-basemap>img{
+    height: 22%;
+    transition: all .3s ease-in-out;
+}
+
+.by-techtablet-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.by-techtablet-wrap>div {
+    margin-left: 6.666%;
+    margin-bottom: 2%;
+}
+
+.by-tablet-wrap>div {
+    margin: 5px;
+}
+
+.by-tablet {
+    width: 80%;
+    min-height: 300px;
+    /* position: absolute; */
+    /* top: 0; */
+    /* left: 0; */
+    background: url(../images/beyond/beiban_bg.png) no-repeat center;
+    background-size: contain;
+    /* z-index: 100; */
+}
+
+
+/* 老师相关样式 */
+
+/* 学生看板 */
+.stu-panel {
+    width: 260px;
+    height: 100%;
+    float: left;
+    z-index: 99;
+    border: 1px solid #424448;
+    box-shadow: 0 2px 6px #313131;
+    background-color: #fff;
+}
+.stu-list-wrap{
+    text-align: center;
+    margin: 20px auto;
+    font-size: 1.2em;
+}
+.even-bg>li:nth-of-type(odd) {
+    background-color: #ccc;
+}
+
+
+.by-tech-title {
+    color: #eee;
+    font-size: 2em;
+    text-align: center;
+    margin-top: -60px;
+}
+
+.by-teacher-tablet {
+    position: relative;
+    min-height: 100px;
+    background: url(../images/beyond/beiban_bg.png) no-repeat center;
+    background-size: contain;
+    background-position: 0 -1%;
+}
+
+.by-teacher-tablet .by-bgmap,
+.by-tablet .by-bgmap {
+    margin: 2%;
+    width: 96%;
+    border-radius: 9% 16% 9% 9%;
+    clip-path: polygon(0 0, 87% 0, 100% 13%, 100% 100%, 0 100%);
+}
+
+.by-tablet .by-basemap {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 335px;
+    height: 335px;
+    position: absolute;
+    top: 197px;
+    left: 199px;
+    /* margin: 2%; */
+    /* border-radius: 9% 16% 9% 9%; */
+    /* clip-path: polygon(0 0, 87% 0, 100% 13%, 100% 100%, 0 100%); */
+    /* background: url(../images/beyond/falao.png) no-repeat center; */
+    /* background-size: contain; */
+}
+
+.by-teacher-tablet .by-basemap {
+    width: 130px;
+    height: 130px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: baseline;
+    align-content: space-around;
+    position: absolute;
+    top: 26.5%;
+    left: 27%;
+}
+
+.by-teacher-tablet .by-basemap>img {
+    height: 21%;
+    transition: all .3s ease-in-out;
+}
+
+/* .by-techtablet-wrap .game-state {
+    color: red;
+} */
+.by-techtablet-wrap .game-state::before {
+    content: '状态：';
+}
+
+.by-basemap .by-map-item {
+    border-radius: 5px;
+    margin: 2px;
+}
+
+/* 老师点击棋子 */
+.by-basemap .by-map-item:hover {
+    cursor: pointer;
+    box-shadow: 0 0 5px 1px #5ff;
+    transform: scale(1.05);
+}
+
+/* 选择棋子弹框 */
+.showinfo {
+    display: none;
+    left: 1px;
+    top: 1px;
+    min-width: 200px;
+    min-height: 200px;
+    padding: 2px;
+    background: #ffe;
+    position: fixed;
+    z-index: 999999;
+    border: 1px solid #4B8DC1;
+    border-radius: 5px;
+}
+
+.showinfo .piece-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 200px;
+    height: 200px;
+    align-items: baseline;
+    align-content: space-around;
+}
+
+.showinfo .piece-wrap img {
+    height: 20%
+}
+
+.showinfo .piece-wrap img:hover {
+    cursor: pointer;
+    box-shadow: 0 0 5px 1px rgba(22, 22, 22, .3);
+}
+
+.by-video-wrap {
+    position: relative;
+}
+
+/* .by-video-wrap video {
+   margin-left: 10%;
+} */
+.by-video-choice {
+    color: #fff;
+    width: 80%;
+    height: 300px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    text-align: center;
+    margin-left: -40%;
+    background: rgba(33, 33, 33, .8);
+}
+
+.by-video-choice p {
+    font-size: 2em;
+    margin: 5px auto;
+    line-height: 200px;
+}
+
+.by-btn-wrap {
+    margin: 20px auto;
+    text-align: center;
+}
+
+.by-btn {
+    font-size: 1.5em;
+    padding: 5px;
+    background-color: #288DFA;
+    border: 1px solid rgb(58, 150, 150);
+    border-radius: 5px;
+}
+
+.by-btn-wrap button+button {
+    margin-left: 20px;
+}
+
+.by-aside {
+    width: 130px;
+    position: absolute;
+    right: 2%;
+    top: 5%;
+}
+
+.by-aside p {
+    font-size: 1.2em;
+}
+
+.by-square-box {
+    font-size: 2em;
+    text-align: center;
+}
+
+.by-square-box li {
+    margin: 0 5px;
+}
+
+/* 学生聊天面板 */
+.by-stu-panel {
+    width: 630px;
+    height: 620px;
+    position: absolute;
+    z-index: 999;
+    right: -631px;
+    margin: 0;
+    transition: right .8s cubic-bezier(.56, 1.24, .78, 1.11)
+}
+
+.by-course-wrap {
+    color: #ffe;
+    font-size: 1.5em;
+}
+
+.by-course-wrap .h3 {
+    font-size: 2em;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.by-course-wrap .course-box {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.by-course-wrap .course {
+    flex-grow: 0;
+    width: 25%;
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+    background: rgb(49, 131, 90);
+    border: 2px solid #ffe;
+    border-radius: 10px;
+    transition: transform .3s;
+}
+
+.by-course-wrap .course:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+/* ---- 提示 闪烁效果 ---- */
+.auto-fade {
+    animation: fade 3000ms infinite;
+}
+
+@keyframes fade {
+    from {
+        opacity: .1;
+    }
+
+    40% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+
+    60% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+
+    to {
+        opacity: .1;
+    }
+}
+/* ----------- */
